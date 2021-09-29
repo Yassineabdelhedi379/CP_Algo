@@ -1,0 +1,20 @@
+ALGORITHM algorithm_name
+VAR s:STRING
+VAR wc : INTEGER := 1
+VAR sc : INTEGER := 0
+VAR vc : INTEGER := 0
+BEGIN
+    FOR i FROM 0 TO s.length-1 STEP 1  DO
+        IF (s[i]==" ") THEN
+            sc = sc + 1
+            wc = wc + 1
+        END_IF
+        IF (s[i]=="A" || S[i]== "a") THEN
+            vc = vc + 1
+        END_IF
+    END_FOR
+    write("the numbers of words is", wc)
+    write("the numbers of spaces is", sc)
+    write("the numbers of vowels is", vc)
+   
+END
